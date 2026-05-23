@@ -1,12 +1,23 @@
 # Ricardo Alvarez — Cybersecurity Portfolio
 
-📍 Austin, TX | 🎓 UTSA — BBA Cybersecurity, May 2026
+📍 Austin, TX | 🎓 UTSA — BBA Cybersecurity & AI, May 2026
 
 Aspiring SOC Analyst with hands-on experience in SIEM, alert triage, phishing detection, 
 and endpoint monitoring. Former Information Security Analyst intern at the University of 
 Texas System. Actively building toward SOC Analyst and Incident Response roles.
 
-**Certifications:** ISC2 CC | Google Cybersecurity Certificate | CompTIA Security+ (In Progress)
+📧 rialv144851@gmail.com
+🔗 [linkedin.com/in/ricardo-alvarez-ii-144199276](https://www.linkedin.com/in/ricardo-alvarez-ii-144199276)
+
+---
+
+## Certifications
+
+| Certification | Issuer | Status |
+|--------------|--------|--------|
+| ISC2 CC | ISC2 | ✅ Earned |
+| Google Cybersecurity Certificate | Google | ✅ Earned |
+| CompTIA Security+ | CompTIA | 🔄 In Progress |
 
 ---
 
@@ -41,17 +52,4 @@ Texas System. Actively building toward SOC Analyst and Incident Response roles.
 
 ---
 
-## Certifications
-
-| Certification | Issuer | Status |
-|--------------|--------|--------|
-| ISC2 CC | ISC2 | ✅ Earned |
-| Google Cybersecurity Certificate | Google | ✅ Earned |
-| CompTIA Security+ | CompTIA | 🔄 In Progress |
-
----
-
-## Connect
-
-🔗 [LinkedIn](www.linkedin.com/in/ricardo-alvarez-ii-144199276) 
-💻 [GitHub](https://github.com/RickAlv210)
+💻 [github.com/RickAlv210](https://github.com/RickAlv210)

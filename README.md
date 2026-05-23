@@ -17,6 +17,6 @@ Targeting SOC Analyst and Security Analyst roles in San Antonio, Austin, and Rem
 | Project | Tools | Status |
 |---|---|---|
 | Wazuh SIEM Lab | Wazuh, Linux, Windows | Complete |
-| Active Directory IAM Lab | Windows Server, AD | In Progress |
+| Active Directory IAM Lab | Windows Server, AD | Completed |
 | Splunk Log Analysis | Splunk | Complete |
 | ELK Stack Detection Lab | Elastic SIEM, Kibana | In Progress |

@@ -53,5 +53,5 @@ Texas System. Actively building toward SOC Analyst and Incident Response roles.
 
 ## Connect
 
-🔗 [LinkedIn](https://linkedin.com/in/ricardo-alvarez) 
+🔗 [LinkedIn](www.linkedin.com/in/ricardo-alvarez-ii-144199276) 
 💻 [GitHub](https://github.com/RickAlv210)

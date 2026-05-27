@@ -30,7 +30,7 @@ Texas System. Actively building toward SOC Analyst and Incident Response roles.
 | [Active Directory IAM Lab](./active-directory-lab/) | Windows Server, Active Directory | ✅ Complete |
 | [Splunk Log Analysis](./splunk-investigation/) | Splunk, SPL | ✅ Complete |
 | [ELK Stack Detection Lab](./elk-detection-lab/) | Elastic SIEM, Kibana | 🔄 In Progress |
-| [Phishing Incident Response](./phishing-incident-response/) | Phishtool, VirusTotal, Any.run | 🔄 In Progress |
+| [Phishing Incident Response](./phishing-incident-response/) | Phishtool, VirusTotal, Any.run | ✅ Complete |
 | [Threat Hunting Lab](./threat-hunting-lab/) | Splunk, ELK, CyberDefenders | 🔄 In Progress |
 | [Cloud Security Monitoring](./cloud-security-monitoring/) | AWS CloudTrail, GuardDuty | 🔄 In Progress |
 | [IDS & Packet Analysis](./ids-packet-analysis/) | Wireshark, CyberDefenders | 🔄 In Progress |

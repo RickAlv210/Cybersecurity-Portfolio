@@ -15,7 +15,7 @@ and endpoint monitoring. Actively building toward SOC Analyst and Incident Respo
 |---|---|---|
 | ISC2 CC | ISC2 | ✅ Earned |
 | Google Cybersecurity Certificate | Google | ✅ Earned |
-| CompTIA Security+ | CompTIA | 🔄 In Progress |
+| CompTIA Security+ | CompTIA | ✅ Earned |
 
 ---
 

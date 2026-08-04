@@ -292,16 +292,6 @@ domains during an incident.
 
 ## Real-World Connection
 
-This lab directly mirrors my experience as an Information 
-Security Analyst Intern at the University of Texas System, 
-where I:
-- Applied least-privilege principles across systems serving 
-  thousands of users
-- Managed identity lifecycle workflows including provisioning, 
-  deprovisioning, and access control
-- Worked within an enterprise AD environment enforcing RBAC 
-  and access integrity
-
 Active Directory is not just a lab tool — it is the identity 
 infrastructure of virtually every enterprise I will work in 
 as a SOC or IAM analyst.

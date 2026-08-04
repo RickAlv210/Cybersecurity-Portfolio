@@ -126,11 +126,7 @@ Set-ADAccountPassword sophie -Reset -NewPassword (Read-Host `
 Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose
 ```
 
-**Real-world SOC connection:** At the University of Texas System 
-I applied least-privilege principles in a live enterprise 
-environment — delegation is exactly how that works in AD. IT 
-support resets passwords without having full admin rights over 
-the entire domain.
+
 
 ---
 

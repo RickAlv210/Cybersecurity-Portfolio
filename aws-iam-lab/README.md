@@ -100,7 +100,7 @@ I enabled IAM Access Analyzer and confirmed a clean baseline scan. Then, to gene
 
 Access Analyzer caught it automatically, flagging the bucket as publicly accessible with `s3:GetObject` read access. I remediated by removing the public bucket policy and re-enabling Block Public Access, then confirmed via re-scan that the finding resolved.
 
-![Access Analyzer flagging the bucket as publicly accessible](screenshots/09-access-analyzer-public-finding.png.png)
+![Access Analyzer flagging the bucket as publicly accessible](screenshots/09-access-analyzer-public-finding_png.png.png)
 *IAM Access Analyzer catching the public S3 exposure*
 
 ![Finding detail confirming Status: Resolved after remediation](screenshots/10-access-analyzer-finding-resolved.png.png)

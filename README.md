@@ -31,6 +31,7 @@ Aspiring SOC Analyst with hands-on experience in SIEM, alert triage, phishing de
 | 6 | [Google Cloud DLP PII Detection Lab](./google-cloud-dlp-lab/) | GCP Cloud DLP API, Cloud Storage, Python | ✅ Complete |
 | 7 | [Nessus Vulnerability Assessment](./Project-06-Nessus-Vulnerability-Scan/) | Nessus Essentials, Windows, Registry Editor | ✅ Complete |
 | 8 | [Microsoft Sentinel SOC Simulation Lab](./microsoft-sentinel-soc-lab/) | Microsoft Sentinel, Log Analytics, Azure Monitor Agent, KQL, MITRE ATT&CK | ✅ Complete |
+| 9 | [AWS IAM Security Lab](./aws-iam-lab/) | AWS IAM, S3, IAM Access Analyzer, CloudTrail, STS | ✅ Complete |
 
 ---
 
@@ -39,13 +40,13 @@ Aspiring SOC Analyst with hands-on experience in SIEM, alert triage, phishing de
 | Category | Tools & Technologies |
 |---|---|
 | SIEM | Microsoft Sentinel, Wazuh, Splunk (training), ELK Stack (training) |
-| Cloud | Microsoft Azure (Sentinel, Log Analytics, VMs, NSGs), Google Cloud (Security Command Center, Cloud DLP, Cloud Audit Logging, IAP, Ops Agent) |
+| Cloud | AWS (IAM, S3, Access Analyzer, CloudTrail, STS), Microsoft Azure (Sentinel, Log Analytics, VMs, NSGs), Google Cloud (Security Command Center, Cloud DLP, Cloud Audit Logging, IAP, Ops Agent) |
+| Identity & Access Management | AWS IAM (least-privilege policy design, roles, access key lifecycle), Active Directory, Windows Server |
 | Vulnerability Management | Nessus Essentials, CVSS, EPSS |
 | Endpoint | Microsoft Defender |
 | Network | Wireshark, CyberChef |
 | Scripting & Query | Python, KQL (Kusto Query Language) |
 | Threat Intel | VirusTotal API, MalwareBazaar, URLhaus, VMRay |
-| IAM | Active Directory, Windows Server |
 | Virtualization | VMware Workstation, VirtualBox |
 | Frameworks | MITRE ATT&CK, NIST |
 

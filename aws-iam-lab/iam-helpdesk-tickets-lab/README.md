@@ -19,6 +19,9 @@ A companion lab to the [AWS IAM Security Lab](https://github.com/RickAlv210/Cybe
 - Verified via the Developer group's Permissions tab that its single managed policy (`S3-Developer-Bucket-Access`) now showed 2 attached entities (alice-dev, diana-dev), confirming identical effective permissions with zero manual policy work
 - Validated the action in CloudTrail — confirmed `CreateUser` and `AddUserToGroup` events for diana-dev, timestamped and correctly attributed
 
+![Developer group showing 2 attached entities after adding diana-dev](Developer_permissions.png)
+*The Developer group's policy now shows 2 attached entities (alice-dev, diana-dev) — identical access granted through group membership alone.*
+
 **Takeaway:** Group-based access assignment means onboarding into an existing role is a single step (add to group) instead of re-deriving and reattaching a custom policy — the reason the original lab built the policy at the group level rather than per-user.
 
 ---
@@ -37,6 +40,15 @@ A companion lab to the [AWS IAM Security Lab](https://github.com/RickAlv210/Cybe
 - Tested the Lambda manually first, confirmed successful revocation, then re-granted the policy and let the scheduled trigger fire on its own
 - Validated the full chain in CloudTrail: manual grant → manual test revoke → re-grant → scheduled auto-revoke, each event correctly attributed to the acting identity (root, the Lambda's assumed role, and finally the scheduler-triggered Lambda invocation)
 
+![EventBridge Scheduler configured for a one-time trigger](event_bridge_schedule_made.png)
+*One-time EventBridge schedule set to invoke the revoke Lambda automatically at a fixed expiration time.*
+
+![CloudTrail event showing the schedule fired and DeleteUserPolicy ran automatically](deleteuserpolicy_detected.png)
+*The schedule fired on time with zero manual intervention — CloudTrail confirms the DeleteUserPolicy call.*
+
+![CloudTrail JSON confirming the deletion was performed by the Lambda's assumed role](deleted_user_policy_in_detail.png)
+*userIdentity shows "AssumedRole" tied to the Lambda's execution role — proof the revocation was automated, not manually clicked.*
+
 **Takeaway:** IAM users don't support time-based policy expiration natively — "temporary access" is a process problem, not a checkbox. Event-driven automation with tightly scoped execution permissions at every layer (the temp policy, the Lambda role, the scheduler) is one legitimate way to solve it without relying on a human remembering to revoke access later.
 
 ---
@@ -50,6 +62,9 @@ A companion lab to the [AWS IAM Security Lab](https://github.com/RickAlv210/Cybe
 - Removed carlos-admin from the **Admins** group, immediately revoking all inherited permissions
 - Verified via the Permissions tab — 0 active policies remaining
 - Validated via CloudTrail that the `RemoveUserFromGroup` event was logged with the correct user, group, and timestamp
+
+![CloudTrail event confirming carlos-admin was removed from the Admins group](user_removed_from_group_event_history.png)
+*RemoveUserFromGroup event showing carlos-admin removed from Admins, fully revoking his inherited AdministratorAccess.*
 
 **Takeaway:** Group-based access removal offboards a user in a single action instead of requiring individual policy detachment — the same design principle from Ticket 1, applied symmetrically in reverse. A real offboarding ticket would also check for MFA devices, SSH keys, and any resource-level permissions granted outside group membership (e.g., a bucket policy naming the user directly) — not applicable here, but worth flagging as a next step.
 
